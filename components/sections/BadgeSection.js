@@ -14,6 +14,7 @@ const Badge = React.memo(({ badge, isActive, onClick }) => (
         ? { backgroundColor: '#80CBC4' }
         : { backgroundColor: '#FBF8EF' }
     }
+    
     onClick={() => onClick(badge)}
   >
     {badge}
