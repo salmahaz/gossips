@@ -19,7 +19,6 @@ export default function NavBar() {
               Gossip&apos;s
             </Link>
           </div>
-          {/* Desktop menu */}
           <div className="hidden md:flex space-x-1 md:space-x-2">
             <Link
               href="/"
@@ -34,7 +33,6 @@ export default function NavBar() {
               Publisher?
             </Link>
           </div>
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -44,7 +42,6 @@ export default function NavBar() {
             </button>
           </div>
         </div>
-        {/* Mobile menu */}
         {dropdownOpen && (
           <div className="md:hidden py-2 space-y-1">
             <Link
