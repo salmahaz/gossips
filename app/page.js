@@ -1,7 +1,6 @@
 import { connectDB } from '@/lib/db';
 import Blog from '@/lib/models/blog';
 import NavBar from "@/components/atoms/NavBar";
-import BadgesSection from "@/components/sections/BadgeSection";
 import BlogCardGrid from "@/components/sections/BlogCardGrid";
 import Footer from "@/components/sections/Footer";
 import LandingSection from "@/components/sections/LandingSection";
@@ -25,7 +24,7 @@ async function getBlogs() {
   }
 }
 
-export const revalidate = 3600; // Revalidate every hour
+export const revalidate = 3600;
 
 export default async function Home() {
   const blogs = await getBlogs();
@@ -34,7 +33,6 @@ export default async function Home() {
     <div>
       <NavBar/>
       <LandingSection/>
-      <BadgesSection/>
       <BlogCardGrid initialBlogs={blogs}/>
       <Footer/>
     </div>
