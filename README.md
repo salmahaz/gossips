@@ -102,9 +102,12 @@ gossips-1/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<<<<<<< HEAD
 
 ## Acknowledgments
 
 - Next.js team for the amazing framework
 - MongoDB for the database solution
 - Tailwind CSS for the utility-first CSS framework
+=======
+>>>>>>> 126811af8cb9c14b5edbda3adf9d9018fca12a6d
