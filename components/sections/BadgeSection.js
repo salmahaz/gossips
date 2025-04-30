@@ -22,12 +22,10 @@ const Badge = React.memo(({ badge, isActive, onClick }) => (
 
 Badge.displayName = 'Badge';
 
-export default function BadgesSection() {
-  const [activeBadge, setActiveBadge] = useState(BADGES[0]);
-
+export default function BadgesSection({ selectedCategory, onCategoryChange }) {
   const handleBadgeClick = useCallback((badge) => {
-    setActiveBadge(badge);
-  }, []);
+    onCategoryChange(badge);
+  }, [onCategoryChange]);
 
   return (
     <div className="max-w-7xl mx-auto px-4">
@@ -36,7 +34,7 @@ export default function BadgesSection() {
           <Badge
             key={badge}
             badge={badge}
-            isActive={activeBadge === badge}
+            isActive={selectedCategory === badge}
             onClick={handleBadgeClick}
           />
         ))}
