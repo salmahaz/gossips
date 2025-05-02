@@ -52,7 +52,7 @@ export default function NavBar() {
               Home
             </Link>
             <Link
-              href="/admin"
+              href="/"
               className="block text-white hover:bg-teal-400 px-2 py-1 rounded text-sm"
               onClick={() => setDropdownOpen(false)}
             >
