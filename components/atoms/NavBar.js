@@ -27,7 +27,7 @@ export default function NavBar() {
               Home
             </Link>
             <Link
-              href="/admin"
+              href="/"
               className="text-white hover:bg-teal-400 px-1 py-0.5 md:px-2 md:py-1 rounded text-xs md:text-sm"
             >
               Publisher?
