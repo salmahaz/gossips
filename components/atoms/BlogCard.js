@@ -14,21 +14,21 @@ function BlogCard({ _id, title, content, category, photo }) {
       />
       <div className="flex flex-col gap-3 p-4 flex-1">
         <span
-          className="inline-block px-3 py-1 rounded-full text-xs font-semibold w-fit"
+          className="inline-block px-3 py-1 rounded-full text-xs md:text-sm font-semibold w-fit"
           style={{ backgroundColor: '#80CBC4', color: '#fff' }}
         >
           {category}
         </span>
-        <h3 className="font-bold text-sm line-clamp-2" title={title}>
+        <h3 className="font-bold text-sm md:text-base line-clamp-2" title={title}>
           {title}
         </h3>
-        <p className="text-xs text-gray-500 line-clamp-3">
+        <p className="text-xs md:text-sm text-gray-500 line-clamp-3">
           {content}
         </p>
         <div className="mt-auto">
           <Link
             href={`/blog-details/${_id}`}
-            className="text-xs text-[#80CBC4] hover:underline font-medium"
+            className="text-xs md:text-sm text-[#80CBC4] hover:underline font-medium"
           >
             Read More...
           </Link>

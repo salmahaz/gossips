@@ -6,7 +6,7 @@ const BADGES = ["All Blogs", "Personal Finance", "Health & Fitness"];
 
 const Badge = React.memo(({ badge, isActive, onClick }) => (
   <span
-    className={`px-4 py-2 rounded-full text-xs md:text-sm font-medium cursor-pointer min-w-[100px] text-center transition-colors
+    className={`px-4 py-2 rounded-full text-xs md:text-base font-medium cursor-pointer min-w-[100px] text-center transition-colors
       ${isActive ? 'text-white' : 'text-gray-800 hover:bg-teal-400'}
     `}
     style={
@@ -14,7 +14,6 @@ const Badge = React.memo(({ badge, isActive, onClick }) => (
         ? { backgroundColor: '#80CBC4' }
         : { backgroundColor: '#FBF8EF' }
     }
-    
     onClick={() => onClick(badge)}
   >
     {badge}

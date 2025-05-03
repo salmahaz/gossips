@@ -14,7 +14,7 @@ export default function NavBar() {
           <div className="flex-shrink-0">
             <Link
               href="/"
-              className="text-white font-bold text-sm md:text-base"
+              className="text-white font-bold text-sm md:text-lg"
             >
               Gossip&apos;s
             </Link>
@@ -22,13 +22,13 @@ export default function NavBar() {
           <div className="hidden md:flex space-x-1 md:space-x-2">
             <Link
               href="/"
-              className="text-white hover:bg-teal-400 px-1 py-0.5 md:px-2 md:py-1 rounded text-xs md:text-sm"
+              className="text-white hover:bg-teal-400 px-1 py-0.5 md:px-2 md:py-1 rounded text-xs md:text-base"
             >
               Home
             </Link>
             <Link
               href="/"
-              className="text-white hover:bg-teal-400 px-1 py-0.5 md:px-2 md:py-1 rounded text-xs md:text-sm"
+              className="text-white hover:bg-teal-400 px-1 py-0.5 md:px-2 md:py-1 rounded text-xs md:text-base"
             >
               Publisher?
             </Link>

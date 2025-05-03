@@ -37,16 +37,16 @@ export default function LandingSection() {
       style={{ backgroundColor: '#80CBC4' }}
       className="text-white text-center py-10 md:py-10 relative"
     >
-      <h1 className="text-base md:text-lg font-bold mb-1 md:mb-2">Welcome To Gossip&apos;s</h1>
-      <p className="mb-2 md:mb-4 text-xs md:text-sm">
+      <h1 className="text-base md:text-xl font-bold mb-1 md:mb-2">Welcome To Gossip&apos;s</h1>
+      <p className="mb-2 md:mb-4 text-xs md:text-base">
         Discover a number of gossips from various categories.
       </p>
       <div className="relative flex items-center w-full max-w-xs md:max-w-md mx-auto bg-white rounded shadow mb-2">
-        <span className="px-2 py-4 md:px-2 text-gray-500 text-xs md:text-sm">
+        <span className="px-2 py-4 md:px-2 text-gray-500 text-xs md:text-base">
           <FaSearch />
         </span>
         <input
-          className="flex-1 p-1 md:p-2 rounded-r outline-none text-gray-800 text-xs md:text-sm"
+          className="flex-1 p-1 md:p-2 rounded-r outline-none text-gray-800 text-xs md:text-base"
           type="search"
           placeholder="Search blogs by title or author..."
           value={searchTerm}
@@ -59,7 +59,6 @@ export default function LandingSection() {
         )}
       </div>
 
-      {/* Search Results Dropdown */}
       {searchResults.length > 0 && (
         <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-full max-w-xs md:max-w-md mt-1 bg-white rounded-lg shadow-lg z-50">
           <div className="py-2">
@@ -67,10 +66,10 @@ export default function LandingSection() {
               <Link
                 key={blog._id}
                 href={`/blog-details/${blog._id}`}
-                className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+                className="block px-4 py-2 text-sm md:text-base text-gray-800 hover:bg-gray-100"
               >
                 <div className="font-medium">{blog.title}</div>
-                <div className="text-xs text-gray-500">By {blog.author}</div>
+                <div className="text-xs md:text-sm text-gray-500">By {blog.author}</div>
               </Link>
             ))}
           </div>

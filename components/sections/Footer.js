@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="text-center py-4 text-white w-full text-xs"
+      className="text-center py-4 text-white w-full text-xs md:text-sm"
       style={{
         backgroundColor: '#80CBC4',
         position: isBlogDetails ? 'fixed' : 'relative',
@@ -19,12 +19,9 @@ export default function Footer() {
         marginTop: isBlogDetails ? 0 : 'auto'
       }}
     >
-      {/* Copyright Text */}
       <p>
         &copy; 2025 Gossip&apos;s. All rights reserved.
       </p>
-      {/* Newsletter Subscription */}
-      {/* <NewsLetter /> */}
     </footer>
   );
 }
